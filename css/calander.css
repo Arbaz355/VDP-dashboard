@@ -1,0 +1,147 @@
+.calander-wraper .btn-day {
+    font-family: 'Open Sans';
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 99;
+    outline: 0;
+    border-radius: 10px;
+    transition: 0.4s all;
+}
+
+.calander-wraper .btn-day.active {
+    color: #FFF;
+    font-weight: 600;
+    z-index: 99;
+}
+
+.calander-wraper .btn-day.active::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: #F05A70;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.calander-wraper .title {
+    font-size: 1.3em;
+}
+
+.calander-wraper .subtitle {
+    font-size: 1.1em;
+}
+
+/* Calendar */
+
+.calander-wraper #currentDate{
+  text-align:center;
+  font-size:20px;
+}
+
+.calander-wraper .field {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.calander-wraper .field label {
+    margin: 2px;
+}
+
+.calander-wraper .form-input {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.calander-wraper .day-assets {
+    display: flex;
+    justify-content: space-between;
+    width: 324px;
+}
+
+.calander-wraper .day-assets .btn:nth-child(2) i {
+    padding: 0 10px 0 0 !important;
+}
+
+.calander-wraper .calendar {
+    height: 380px;
+    width:inherit;
+    border-radius: 30px;
+    background: #ffffff;
+	padding: 25px;
+	user-select: none;
+}
+
+.calander-wraper .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px 18px 0px 0px;
+    height: 20px;
+    padding:8px;
+    width: 100%;
+    color: #262626;
+}
+
+.calander-wraper .month {
+    font-size: 0.7em;
+}
+
+.calander-wraper .icon {
+    padding: 10px;
+    font-size: 1em;
+    margin: 0 0 0 5px;
+    background: #ffffff;
+    color: #F05A70;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+.calander-wraper .icon:hover {
+    cursor: pointer;
+}
+
+.calander-wraper #calendar {
+    width: 100%;
+}
+
+.calander-wraper .weekends th {
+    font-size: 1em;
+    color: gray;
+    font-weight: 400;
+    width: 40px;
+    margin: 10px 0;
+}
+
+.calander-wraper #calendar tr {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 3px;
+}
+
+.calander-wraper #calendar td {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 99;
+}
